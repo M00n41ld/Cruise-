@@ -1,0 +1,38 @@
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contacts__icons svg {
+  margin-right: 10px;
+}
+
+.contacts__text-wrapper h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  font-family: $font;
+  color: $tangaroa;
+}
+
+.contacts__text-wrapper address {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: $font;
+  color: $tangaroa;
+  font-style: normal;
+}
+
+.contacts__text-wrapper span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: $font;
+  color: $tangaroa;
+}

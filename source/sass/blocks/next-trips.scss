@@ -1,0 +1,122 @@
+.next-trips__table {
+    display: none;
+}
+
+.next-trips__item {
+    display: grid;
+}
+
+.next-trips__img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.next-trips__img img {
+    height: 100%;
+    width: 100%;
+}
+
+.next-trips__text {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 21px 30px;
+}
+
+.next-trips__text h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    font-family: $font;
+    color: $alice-blue;
+    margin: 0;
+}
+
+.next-trips__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    display: grid;
+    padding: 0;
+    margin: 0;
+    max-width: 1130px;
+    margin: 0 auto;
+
+    @media (max-width: $vp-1023) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: $vp-767) {}
+}
+
+.next-trips__wrapper {
+    padding-top: 95px;
+    padding-bottom: 120px;
+
+    @media (max-width: $vp-1023) {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 100px;
+    }
+
+    @media (max-width: $vp-767) {}
+}
+
+.next-trips__wrapper h2 {
+    font-family: $font;
+    color: $tangaroa;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    margin: 0;
+    margin-bottom: 49px;
+}
+
+.next-trips__item:hover .next-trips__table {
+    display: block;
+}
+
+.next-trips__item:hover .next-trips__text {
+    display: block;
+    background-color: $tangaroa;
+    padding: 30px 25px;
+    max-height: 386px;
+}
+
+.next-trips__button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: $tangaroa;
+    font-family: $font;
+    align-items: center;
+    width: 100%;
+    border: none;
+    padding: 9px 26px 10px 27px;
+    margin-top: 11px;
+}
+
+.next-trips__table dl {
+    margin: 0;
+    color: $alice-blue;
+    margin-top: 14px;
+}
+
+.next-trips__table dd {
+    margin: 0;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 13px;
+}
+
+.next-trips__table dt {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    font-family: $font;
+    margin-bottom: 0;
+}
