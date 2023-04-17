@@ -34,14 +34,14 @@ export class ScrollLock {
 
   enableScrolling() {
     document.body.classList.remove(this._lockClass);
-    window.scrollTo(0, +document.body.dataset.scroll);
+    // window.scrollTo(0, +document.body.dataset.scroll);
     document.body.style.paddingRight = null;
-    document.body.style.top = null;
+    // document.body.style.top = null;
     this._fixedBlockElements.forEach((block) => {
       block.style.paddingRight = null;
     });
     document.body.removeAttribute('data-scroll');
-    this._scrollTop = null;
+    // this._scrollTop = null;
   }
 }
 

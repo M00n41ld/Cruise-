@@ -1,14 +1,13 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-
+import initMap from './utils/menu';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
   // Utils
   // ---------------------------------
-
+  initMap();
   iosVhFix();
 
   // Modules
@@ -20,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     const form = new Form();
     window.form = form;
+    window.initMap = initMap;
     form.init();
   });
 });
