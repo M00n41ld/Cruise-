@@ -662,22 +662,10 @@ button,
   cursor: pointer;
 }
 
-.is-active::before {
-  content: "";
-  position: absolute;
-  background-image: url("../../img/svg/logo-menu.svg");
-  background-position: no-repeat;
-  background-size: 42px 22px;
-  width: 42px;
-  height: 22px;
-}
-
-.is-active .header__list a {
-  color: #011c40;
-}
-
 .is-active .header__button {
   margin-left: auto;
+  padding: 24px 5px;
+  margin-bottom: 22px;
 }
 
 .contacts__wrapper {
@@ -691,7 +679,7 @@ button,
   padding-right: 45px;
   margin: 0 auto;
   padding-top: 120px;
-  padding-bottom: 113px;
+  padding-bottom: 120px;
 }
 
 .contacts__text-wrapper {
@@ -768,8 +756,8 @@ button,
   padding-bottom: 145px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
   max-width: 1250px;
   padding-left: 45px;
   padding-right: 45px;
@@ -870,20 +858,8 @@ button,
   margin-bottom: 12px;
 }
 
-.features__item--liner svg {
-  width: 21px;
-}
-
-.features__item--check svg {
-  width: 27px;
-}
-
 .features__item--check {
   padding-right: 50px;
-}
-
-.features__item--ship svg {
-  width: 36px;
 }
 
 .hero__text h2 {
@@ -958,7 +934,7 @@ button,
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 45px;
-  padding-bottom: 50px;
+  padding-bottom: 42px;
 }
 
 .footer__list {
@@ -1008,7 +984,7 @@ button,
   margin: 0;
   list-style: none;
   margin-left: auto;
-  padding-top: 5px;
+  padding-top: 16px;
 }
 
 .footer__img {
@@ -1170,6 +1146,17 @@ button,
 
 .header__button-open:active {
   opacity: 0.6;
+}
+
+.header__mobile-logo {
+  display: none;
+}
+
+.header__mobile-logo img {
+  padding-top: 20px;
+  display: none;
+  margin-left: -10px;
+  min-width: 42px;
 }
 
 .next-trips__table {
@@ -1630,7 +1617,7 @@ button,
   .contacts__wrapper {
     padding-top: 100px;
     gap: 30px;
-    padding-bottom: 93px;
+    padding-bottom: 100px;
   }
 
   .contacts__icons svg {
@@ -1720,6 +1707,19 @@ button,
     margin-bottom: 6px;
   }
 
+  .features__item--liner svg {
+    width: 21px;
+  }
+
+  .features__item--check svg {
+    width: 27px;
+  }
+
+  .features__item--ship svg {
+    margin-bottom: 6px;
+    width: 36px;
+  }
+
   .features__item--ship h3 {
     margin-bottom: 19px;
   }
@@ -1770,6 +1770,7 @@ button,
 
   .footer__socials {
     gap: 22.5px;
+    padding-top: 6px;
   }
 
   .footer__img {
@@ -1808,6 +1809,7 @@ button,
 
   .header__img img {
     min-width: 38px;
+    max-width: 38px;
     height: 20px;
   }
 
@@ -1910,6 +1912,7 @@ button,
 
 @media (max-width: 1023px) and (max-width: 767px) {
   .contacts__maps {
+    min-width: unset;
     background-size: 290px 316px;
     background-position: 50%;
     background-image: url("../../img/map-mobile.webp");
@@ -1929,18 +1932,25 @@ button,
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 28px;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     font-family: "Montserrat", "Arial", sans-serif;
   }
 
+  .is-active .header__mobile-logo img {
+    display: block;
+  }
+
+  .is-active .header__list a {
+    color: #011c40;
+  }
+
   .is-active {
     background-color: #f9fbfd;
     padding-left: 25px;
-    padding-top: 20px;
-    padding-right: 15px;
+    padding-right: 8px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
@@ -1948,7 +1958,7 @@ button,
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    width: 95%;
+    width: 93%;
     margin-left: auto;
     height: 100vh;
   }
@@ -1979,7 +1989,7 @@ button,
     flex-direction: column-reverse;
     padding-top: 58px;
     gap: 0;
-    padding-bottom: 58px;
+    padding-bottom: 65px;
   }
 
   .contacts__text-wrapper {
@@ -2110,6 +2120,10 @@ button,
     padding-right: 0;
   }
 
+  .header__img {
+    padding-top: 20px;
+  }
+
   .header__img img {
     min-width: 42px;
     height: 22px;
@@ -2120,12 +2134,25 @@ button,
     overflow-y: scroll;
   }
 
+  .header__list a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
   .header__button {
     display: block;
     border: none;
-    width: 40px;
-    height: 30px;
+    padding: 23px 14px;
     background-color: transparent;
+  }
+
+  .header__mobile-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .next-trips__text {
