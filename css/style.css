@@ -746,7 +746,7 @@ button,
 
 .contacts__maps {
   min-width: 560px;
-  background-image: url("../../img/map.webp");
+  background-image: url("../img/map.webp");
   background-repeat: no-repeat;
   background-size: 560px 306px;
 }
@@ -821,7 +821,7 @@ button,
 }
 
 .features__wrapper {
-  background-image: url("../../img/features.webp");
+  background-image: url("../img/features.webp");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 555px;
@@ -895,7 +895,7 @@ button,
 }
 
 .hero {
-  background-image: url("../../img/hero.webp");
+  background-image: url("../img/hero.webp");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 650px;
@@ -1354,7 +1354,7 @@ button,
 }
 
 .form {
-  background-image: url("../../img/next-trips.webp");
+  background-image: url("../img/next-trips.webp");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 555px;
@@ -1642,7 +1642,7 @@ button,
   .contacts__maps {
     min-width: 324px;
     background-size: 324px 335px;
-    background-image: url("../../img/map-tablet.webp");
+    background-image: url("../img/map-tablet.webp");
   }
 
   .description__wrapper {
@@ -1686,7 +1686,7 @@ button,
   }
 
   .features__wrapper {
-    background-image: url("../../img/features-tablet.webp");
+    background-image: url("../img/features-tablet.webp");
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 69px;
@@ -1735,7 +1735,7 @@ button,
   }
 
   .hero {
-    background-image: url("../../img/hero-tablet.jpg");
+    background-image: url("../img/hero-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 100%;
@@ -1853,7 +1853,7 @@ button,
   }
 
   .form {
-    background-image: url("../../img/next-trips-tablet.webp");
+    background-image: url("../img/next-trips-tablet.webp");
   }
 
   .form__wrapper {
@@ -1894,19 +1894,19 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .contacts__maps {
-    background-image: url("../../img/map-tablet@2x.webp");
+    background-image: url("../img/map-tablet@2x.webp");
   }
 
   .features__wrapper {
-    background-image: url("../../img/features-tablet@2x.webp");
+    background-image: url("../img/features-tablet@2x.webp");
   }
 
   .hero {
-    background-image: url("../../img/hero-tablet@2x.wepb");
+    background-image: url("../img/hero-tablet@2x.wepb");
   }
 
   .form {
-    background-image: url("../../img/next-trips-tablet@2x.webp");
+    background-image: url("../img/next-trips-tablet@2x.webp");
   }
 }
 
@@ -1915,13 +1915,13 @@ button,
     min-width: unset;
     background-size: 290px 316px;
     background-position: 50%;
-    background-image: url("../../img/map-mobile.webp");
+    background-image: url("../img/map-mobile.webp");
   }
 }
 
 @media (max-width: 1023px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .contacts__maps {
-    background-image: url("../../img/map-mobile@2x.webp");
+    background-image: url("../img/map-mobile@2x.webp");
   }
 }
 
@@ -2032,7 +2032,7 @@ button,
   }
 
   .features__wrapper {
-    background-image: url("../../img/features-mobile.webp");
+    background-image: url("../img/features-mobile.webp");
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 37px;
@@ -2068,7 +2068,7 @@ button,
   }
 
   .hero {
-    background-image: url("../../img/hero-mobile.webp");
+    background-image: url("../img/hero-mobile.webp");
     min-height: 500px;
   }
 
@@ -2178,7 +2178,7 @@ button,
   }
 
   .form {
-    background-image: url("../../img/next-trips-mobile.webp");
+    background-image: url("../img/next-trips-mobile.webp");
   }
 
   .form__container {
@@ -2235,32 +2235,32 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .features__wrapper {
-    background-image: url("../../img/features-mobile@2x.webp");
+    background-image: url("../img/features-mobile@2x.webp");
   }
 
   .hero {
-    background-image: url("../../img/hero-mobile@2x.webp");
+    background-image: url("../img/hero-mobile@2x.webp");
   }
 
   .form {
-    background-image: url("../../img/next-trips-mobile@2x.webp");
+    background-image: url("../img/next-trips-mobile@2x.webp");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .contacts__maps {
-    background-image: url("../../img/map@2x.webp");
+    background-image: url("../img/map@2x.webp");
   }
 
   .features__wrapper {
-    background-image: url("../../img/features@2x.webp");
+    background-image: url("../img/features@2x.webp");
   }
 
   .hero {
-    background-image: url("../../img/hero@2x.wepb");
+    background-image: url("../img/hero@2x.wepb");
   }
 
   .form {
-    background-image: url("../../img/next-trips@2x.webp");
+    background-image: url("../img/next-trips@2x.webp");
   }
 }
