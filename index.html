@@ -16,7 +16,6 @@
   <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" >
   <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font" >
   <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" >
-  <link rel="preload" as="image" href="img/hero@2x.webp">
   <link rel="preload" as="image" href="img/hero-mobile@2x.webp">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -51,6 +50,7 @@
               <img src="img/svg/logo-menu.svg" width="42" height="22" alt="Логотип Круиза в Антарктику." >
               </a>
           <button class="header__button" type="button" data-open-modal="modal" data-close-modal>
+            <span class="visually-hidden">Нажмите чтобы открыть меню.</span>
             <svg class="header__button-open" aria-hidden="true" focusable="false" width="25" height="13">
               <use href="img/sprite.svg#menu" />
             </svg>
@@ -488,6 +488,7 @@
         <ul class="footer__socials">
           <li class="footer__item footer__item--ok">
             <a href="#">
+              <span class="visually-hidden">Мы в Одноклассниках.</span>
           <svg aria-hidden="true" focusable="false" width="20" height="20">
             <use href="img/sprite.svg#icon-ok" />
           </svg>
@@ -495,6 +496,7 @@
         </li>
         <li class="footer__item footer__item--ya">
           <a href="#">
+            <span class="visually-hidden">Мы в Дзене.</span>
           <svg aria-hidden="true" focusable="false" width="20" height="20">
             <use href="img/sprite.svg#icon-ya" />
           </svg>
@@ -502,6 +504,7 @@
         </li>
         <li class="footer__item footer__item--rt">
           <a href="#">
+            <span class="visually-hidden">Мы на Реддите</span>
             <svg aria-hidden="true" focusable="false" width="20" height="20">
               <use href="img/sprite.svg#icon-rt" />
             </svg>
