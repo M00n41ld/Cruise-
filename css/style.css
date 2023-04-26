@@ -682,6 +682,12 @@ button,
   padding-bottom: 120px;
 }
 
+.contacts__icons {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .contacts__text-wrapper {
   padding-top: 75px;
 }
@@ -1261,9 +1267,11 @@ button,
 
 .next-trips__item:hover .next-trips__text {
   background-color: #011c40;
-  padding: 30px 25px;
-  padding-bottom: 35px;
   height: 100%;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1868,6 +1876,11 @@ button,
     line-height: 150%;
   }
 
+  .next-trips__item:hover .next-trips__text {
+    padding: 30px 35px;
+    padding-bottom: 35px;
+  }
+
   .form {
     background-image: url("../img/next-trips-tablet.webp");
   }
@@ -2193,6 +2206,11 @@ button,
     font-size: 24px;
     line-height: 150%;
     margin-bottom: 30px;
+  }
+
+  .next-trips__item:hover .next-trips__text {
+    padding: 30px 25px;
+    padding-bottom: 35px;
   }
 
   .form {
