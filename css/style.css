@@ -659,7 +659,15 @@ button,
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display: none;
   cursor: pointer;
+}
+
+.is-active .modal--overlay {
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 43, 102, 0.5)), color-stop(7%, transparent));
+  background: -o-linear-gradient(left, rgba(0, 43, 102, 0.5) 0 7%, transparent 7% 100%);
+  background: linear-gradient(to right, rgba(0, 43, 102, 0.5) 0 7%, transparent 7% 100%);
 }
 
 .is-active .header__button {
@@ -1263,12 +1271,21 @@ button,
 .next-trips__item:hover .next-trips__table {
   display: block;
   margin-bottom: auto;
-  overflow-y: auto;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.next-trips__item:hover .next-trips__table::-webkit-scrollbar {
+  width: 2px;
+  background-color: #011c40;
+}
+
+.next-trips__item:hover .next-trips__table::-webkit-scrollbar-thumb {
+  background: #f9fbfd;
 }
 
 .next-trips__item:hover .next-trips__text {
   background-color: #011c40;
-  height: 100%;
   padding-top: 30px;
   padding-bottom: 35px;
   padding-left: 25px;
@@ -1391,6 +1408,11 @@ button,
   padding: 50px;
   padding-top: 44px;
   max-width: 403px;
+  min-width: 403px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin-bottom: auto;
 }
 
 .form__container h3 {
@@ -1887,6 +1909,10 @@ button,
     background-image: url("../img/next-trips-tablet.webp");
   }
 
+  .form__container {
+    min-width: unset;
+  }
+
   .form__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1991,7 +2017,7 @@ button,
     justify-content: flex-end;
     width: 93%;
     margin-left: auto;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .is-active .header__img {
@@ -2151,10 +2177,12 @@ button,
     padding: 20px 15px;
     padding-top: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .header__img {
     padding-top: 20px;
+    padding-left: 15px;
   }
 
   .header__img img {
@@ -2295,7 +2323,7 @@ button,
   }
 
   .hero {
-    background-image: url("../img/hero@2x.wepb");
+    background-image: url("../img/hero@2x.webp");
   }
 
   .form {
