@@ -1504,6 +1504,7 @@ button,
   height: 100%;
   background-color: #f9fbfd;
   width: 100%;
+  cursor: pointer;
 }
 
 .form__checkbox label {
@@ -1531,6 +1532,7 @@ button,
 .form__checkbox {
   margin-bottom: 29px;
   position: relative;
+  cursor: pointer;
 }
 
 .form__text {
