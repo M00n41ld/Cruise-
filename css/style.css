@@ -1783,7 +1783,7 @@ button,
   }
 
   .hero {
-    background-image: url("../img/hero-tablet.jpg");
+    background-image: url("../img/hero-tablet.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 100%;
