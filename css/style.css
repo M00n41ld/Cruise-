@@ -834,6 +834,7 @@ button,
   background-position: 50% 100%;
   padding-top: 88px;
   padding-bottom: 120px;
+  background-color: #bad8e4;
 }
 
 .features__item p {
@@ -1380,6 +1381,7 @@ button,
   background-size: cover;
   min-height: 555px;
   background-position: 50% 100%;
+  background-color: #bad8e4;
 }
 
 .form__container {
@@ -2240,7 +2242,7 @@ button,
   }
 
   .form__checkbox span {
-    margin-left: 10px;
+    margin-left: 4px;
     font-size: 10px;
     font-family: "Montserrat", "Arial", sans-serif;
     line-height: 120%;
