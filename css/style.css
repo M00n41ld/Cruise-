@@ -1994,6 +1994,8 @@ button,
     font-size: 18px;
     line-height: 22px;
     font-family: "Montserrat", "Arial", sans-serif;
+    max-height: 100vmin;
+    overflow-y: scroll;
   }
 
   .is-active .header__mobile-logo img {
@@ -2192,7 +2194,6 @@ button,
 
   .header__list {
     display: none;
-    overflow-y: scroll;
   }
 
   .header__list a {
