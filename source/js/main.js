@@ -3,13 +3,24 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import initMap from './utils/menu';
 // ---------------------------------
+function playVideo() {
+  let iframe = document.getElementById('video-iframe');
+  let preview = document.querySelector('.video-preview');
+  let button = document.querySelector('.play-button');
+  iframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1';
+  preview.style.display = 'none';
+  button.style.display = 'none';
+}
 
 window.addEventListener('DOMContentLoaded', () => {
+  // var iframe = document.getElementById("video-iframe");
+  // var preview = document.querySelector(".video-preview");
+  let button = document.querySelector('.play-button');
+  button.addEventListener('click', playVideo);
   // Utils
   // ---------------------------------
   initMap();
   iosVhFix();
-
   // Modules
   // ---------------------------------
 

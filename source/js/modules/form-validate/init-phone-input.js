@@ -43,11 +43,11 @@ const onPhoneInputPaste = (e) => {
   e.target.setSelectionRange(0, 0);
   if (!e.target.selectionStart) {
     setTimeout(() => {
-      if (e.target.value.startsWith('+7')) {
+      if (e.target.value.startsWith('8')) {
         return;
       }
-      if (e.target.value.startsWith('+8')) {
-        e.target.value = `+7 ${e.target.value.slice(3)}`;
+      if (e.target.value.startsWith('8')) {
+        e.target.value = `8 ${e.target.value.slice(3)}`;
         return;
       }
       e.target.value = '';
